@@ -2,7 +2,7 @@ html{
     display: flex;
     justify-content: center;
     background-color: #060d17;
-    background-image: url(../images/space-gif-background2.gif);
+    background-image: url("../images/space-gif-background2.gif");
     background-size: contain ;
 }
 body{
