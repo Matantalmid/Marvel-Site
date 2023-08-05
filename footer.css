@@ -1,0 +1,59 @@
+footer{
+    grid-area: 5/ 1 / 6 / 6;
+    background-color: #183153;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+footer p{
+    color: #9c9c9c;
+}
+
+footer .links{
+    display: flex;
+    justify-content: space-between;
+    width: 25vw;
+    margin-right: 10px;
+}
+
+footer .links .porjects ul{
+    padding: 0;
+}
+
+.community ul , .help ul{
+    padding: 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.description {
+    margin: 0 0 0 10px;
+}
+
+.description p{
+    margin-left: 0;
+    width: 45vw;
+}
+
+@media screen and (max-width:900px){
+    footer{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description p{
+        margin-left: 0;
+        width: 80vw;
+    }
+
+    footer .links{
+        display: flex;
+        justify-content: space-between;
+        width: 85vw;
+    }
+
+}
