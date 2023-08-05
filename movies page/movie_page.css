@@ -3,18 +3,182 @@ html{
     justify-content: center;
     background-color: #060d17;
     background-image: url(/images/space-gif-background2.gif);
-    
+    background-size: contain 
+
 }
 body{
     margin: 0;
     width: 80vw;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    grid-template-rows: 11vh 1fr 1fr 1fr ;
-    background-color: #060d17;
+    grid-template-rows: 11vh 1fr 1fr 1fr;
+    background-color: rgba(6, 13, 23, 0.788);
     box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.196);
 }
 
 main{
     grid-area: 2/ 1 / 5 / 6;
+}
+
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-container .card{
+    width: 230px;
+    height: 341px;
+    margin:  10px 10px 30px 10px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-color: #060d17;
+}
+
+.card-container .card .data{
+    width: 230px;
+    height: 341px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding: 10px;
+    font-weight: bold;
+    transition: 0.5s;
+    opacity: 0;
+}
+.card-container .card:hover .data{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    transition: 0.5s;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.card-container .card .data p{
+    margin: 0;
+}
+
+
+.card-container .card .data p:nth-of-type(2){
+    font-weight: 400;
+    color: #b3b3b3;
+}
+
+.card-container .card .data p:nth-of-type(3){
+    font-weight: 400;
+    color: #b3b3b3;
+    margin-bottom: 15px;
+}
+
+.card-container .card:nth-of-type(1){
+    background-image: url(../images/iron-man1.jpg);
+}
+.card-container .card:nth-of-type(2){
+    background-image: url(../images/the-incredible-hulk.jpg);
+}
+.card-container .card:nth-of-type(3){
+    background-image: url(../images/iron-man2.jpg);
+}
+.card-container .card:nth-of-type(4){
+    background-image: url(../images/thor1.jpg);
+}
+.card-container .card:nth-of-type(5){
+    background-image: url(../images/captain-america1.jpeg);
+}
+.card-container .card:nth-of-type(6){
+    background-image: url(../images/the-avengers1.jpg);
+}
+.card-container .card:nth-of-type(7){
+    background-image: url(../images/iron-man3.jpg);
+}
+.card-container .card:nth-of-type(8){
+    background-image: url(../images/thor2.jpg);
+}
+.card-container .card:nth-of-type(9){
+    background-image: url(../images/captain-america2.jpg);
+}
+.card-container .card:nth-of-type(10){
+    background-image: url(../images/guardians-of-the-galaxy1.jpg);
+}
+.card-container .card:nth-of-type(11){
+    background-image: url(../images/the-avengers2.jpg);
+}
+.card-container .card:nth-of-type(12){
+    background-image: url(../images/ant-man1.jpg);
+}
+.card-container .card:nth-of-type(13){
+    background-image: url(../images/captain-america3.jpg);
+}
+.card-container .card:nth-of-type(14){
+    background-image: url(../images/doctor-strange1.jpg);
+}
+.card-container .card:nth-of-type(15){
+    background-image: url(../images/guardians-of-the-galaxy2.jpg);
+}
+.card-container .card:nth-of-type(16){
+    background-image: url(../images/spiderman1.jpg);
+}
+.card-container .card:nth-of-type(17){
+    background-image: url(../images/thor3.jpg);
+}
+.card-container .card:nth-of-type(18){
+    background-image: url(../images/black-panther1.jpg);
+}
+.card-container .card:nth-of-type(19){
+    background-image: url(../images/the-avengers-infinity-war.jpg);
+}
+.card-container .card:nth-of-type(20){
+    background-image: url(../images/ant-man2.jpg);
+}
+.card-container .card:nth-of-type(21){
+    background-image: url(../images/captain-marvel.jpg);
+}
+.card-container .card:nth-of-type(22){
+    background-image: url(../images/the-avengers-endgame-movie-.jpg);
+}
+.card-container .card:nth-of-type(23){
+    background-image: url(../images/spiderman2.jpg);
+}
+.card-container .card:nth-of-type(24){
+    background-image: url(../images/black-widow.jpg);
+}
+.card-container .card:nth-of-type(25){
+    background-image: url(../images/shang-chi.jpg);
+}
+.card-container .card:nth-of-type(26){
+    background-image: url(../images/eternals.jpg);
+}
+.card-container .card:nth-of-type(27){
+    background-image: url(../images/spiderman3.jpg);
+}
+.card-container .card:nth-of-type(28){
+    background-image: url(../images/doctor-strange2.jpg);
+}
+.card-container .card:nth-of-type(29){
+    background-image: url(../images/thor4.jpg);
+}
+.card-container .card:nth-of-type(30){
+    background-image: url(../images/black-panther2.jpg);
+}
+.card-container .card:nth-of-type(31){
+    background-image: url(../images/ant-Man3.jpg);
+}
+.card-container .card:nth-of-type(32){
+    background-image: url(../images/guardians-of-the-galaxy3.jpg);
+}
+
+@media screen and (max-width: 990px) {
+    body{
+        width: 100vw;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 }

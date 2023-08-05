@@ -4,7 +4,6 @@ html{
     background-color: #060d17;
     background-image: url(/images/space-gif-background2.gif);
     background-size: contain ;
-    
 }
 body{
     margin: 0;
@@ -12,8 +11,8 @@ body{
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: 11vh 1fr 1fr 1fr ;
-    background-color: #060d17;
-    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.196);
+    background-color: rgba(6, 13, 23, 0.695);
+        box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.196);
 }
 
 main{
