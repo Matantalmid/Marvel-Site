@@ -1,0 +1,107 @@
+html{
+    display: flex;
+    justify-content: center;
+    background-color: #060d17;
+    background-image: url("../images/space-gif-background2.gif");
+    background-size: 100vw 100vh;
+}
+
+body{
+    margin: 0;
+    width: 80vw;
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 11vh 1fvh 1fr 1fr;
+    background-color: rgba(6, 13, 23, 0.925);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.196);
+}
+
+main{
+    grid-area: 2/ 1 / 5 / 6;
+}
+
+article{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.time-line{
+    position: absolute;
+    content: "";
+    justify-self: center;
+    height: 86%;
+    width: 10px;
+    background-color: rgb(255, 0, 0);
+    left: 20px;
+    border: 1px solid white;
+    border-radius: 20px;
+    transform: translatey(25px);
+}
+
+section{
+    display: flex;
+    height: 90vh;
+}
+
+section p{
+    width: 30vw;
+    align-self: center;
+    color: #fff;
+}
+
+section h1{
+    position: sticky;
+    top: 10vh;
+    height: 15vh;
+    width: 35vw;
+    color: #fff;
+    font-size: 30px;
+    padding: 0 0 0 20px;
+    margin: 0;
+    transform: translateX(20px);
+}
+
+section img{
+    align-self: center;
+    height: 600px;
+    width: 600px;
+}
+
+
+
+.s-2008-2012 p, .s-2020 p, .stan-lee p{
+    position: relative;
+    transform: translateX(-50px);
+}
+
+@media screen and (max-width:900px) {
+    body{
+        width: 90vw;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    section h1{
+        width: 90vw;
+    }
+
+    section img{
+        height: 50vh;
+        width: 100vw
+    }
+
+    section p{
+        width: 80vw;
+    }
+
+    .s-2008-2012 p, .s-2020 p, .stan-lee p{
+        position: relative;
+        transform: translateX(0);
+    }
+}
