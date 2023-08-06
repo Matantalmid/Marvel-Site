@@ -6,6 +6,7 @@ header{
     backdrop-filter: blur(10px);
     box-shadow: inset 0px 0px 50px rgba(255, 255, 255, 0.137);
     height: 10vh;
+    z-index: 101;
 }
 
 header nav ul{

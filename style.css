@@ -34,4 +34,10 @@ main{
     body{
         width: 100vw;
     }
+
+    video{
+        position: relative;
+        height: 90vh;
+        width: 100vw;
+    }
 }
