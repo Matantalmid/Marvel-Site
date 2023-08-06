@@ -110,3 +110,24 @@ textarea{
     flex: 2;
     background-color: rgb(116, 248, 72);
 }
+
+@media screen and (max-width:900px) {
+    body{
+        width: 100vw;
+        grid-template-rows: 11vh 1fr 1fr 1fr 1fr;
+    }
+
+    .container{
+        height: 89vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    form{
+        width: 100%;
+        padding: 0;
+        margin-top: 50px;
+    }
+}
