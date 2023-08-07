@@ -39,5 +39,7 @@ main{
         position: relative;
         height: 90vh;
         width: 100vw;
+        transform: scale(2) rotate(90deg);
+
     }
 }
